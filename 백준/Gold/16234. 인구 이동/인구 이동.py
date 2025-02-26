@@ -8,19 +8,18 @@ def BFS(graph,visited,i,j,l,r):
     result.append((i,j))
     directions = [(0,1),(0,-1),(1,0),(-1,0)]
     n= len(graph)
+    result_sum = graph[i][j]
     while stack:
         x,y = stack.popleft()
         for dx,dy in directions:
             sx,sy = x+dx,y+dy
             if 0<=sx<n and 0<=sy<n and not visited[sx][sy] and l<= abs(graph[x][y] - graph[sx][sy]) <=r:
                 visited[sx][sy] = True
+                result_sum += graph[sx][sy]
                 stack.append((sx,sy))
                 result.append((sx,sy))
 
-    result_sum = 0
     result_len = len(result)
-    for x,y in result:
-        result_sum += graph[x][y]
 
     for x,y in result:
         graph[x][y] = result_sum//result_len    
