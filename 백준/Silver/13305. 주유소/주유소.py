@@ -6,24 +6,18 @@ dist = list(map(int, sys.stdin.readline().split()))
 prices = list(map(int, sys.stdin.readline().split()))
 
     
-tmp = float("inf")
 count = 0
-idx = 0
-dist_sum = 0
-for price in prices:
-    if idx == len(dist):
-        break
+tmp = prices[0]
+dist_sum = dist[0]
+for i in range(1,len(dist)):
+    if tmp < prices[i]:
+        dist_sum += dist[i]
     
-    if tmp < price:
-        dist_sum += dist[idx]
-        continue
-
     else:
-        tmp = price
-        dist_sum += dist[idx]
-        count += price * dist_sum
-        dist_sum = 0
+        count += dist_sum*tmp
+        dist_sum = dist[i]
+        tmp = prices[i]
+    
 
-    idx+=1
-
+count += tmp * dist_sum
 print(count)
