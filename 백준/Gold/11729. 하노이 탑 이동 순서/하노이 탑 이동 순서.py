@@ -1,18 +1,19 @@
 import sys
+from collections import deque
 
 def hanoi(n, start, mid, to, result):
     if n == 1:
-        result.append([start,to])
+        result.append((start,to))
         return
 
     hanoi(n-1,start,to,mid, result)
-    result.append([start,to])
+    result.append((start,to))
     hanoi(n-1, mid, start, to, result)
 
 
 n = int(sys.stdin.readline())
 
-result = []
+result = deque()
 hanoi(n,1,2,3,result)
 
 print(len(result))
