@@ -28,8 +28,9 @@ def BFS(shark):
     result = []
     while stack:
         x,y,cnt = stack.popleft()
-        if min_dist != -1 and cnt > min_dist:
-            break
+        if result:
+            if result[0][2] < cnt:
+                break
 
         for dx,dy in directions:
             sx,sy = x+dx,y+dy
@@ -38,8 +39,7 @@ def BFS(shark):
                 visited[sx][sy] = True
                 if 0 < graph[sx][sy] < level:
                     result.append([sx,sy,cnt+1])
-                    if min_dist == -1:
-                        min_dist = cnt + 1
+                    
     if not result:
         return shark
 
