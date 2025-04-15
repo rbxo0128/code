@@ -25,6 +25,7 @@ def solution(coin, cards):
             break
         else:
             rounds+=1
+            
             if rounds == dess//2+1:
                 break
         
