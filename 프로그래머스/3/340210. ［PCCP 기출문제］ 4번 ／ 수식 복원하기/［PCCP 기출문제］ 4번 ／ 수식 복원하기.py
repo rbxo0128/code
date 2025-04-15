@@ -95,7 +95,6 @@ def solution(expressions):
     print(answer_checks)
     result = [' '.join(sublist) for sublist in answer_checks]
 
-
     return result
 
 def decimals(n, base):
