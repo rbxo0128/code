@@ -38,10 +38,3 @@ def check(n,m,x,y,r,c,k,cnt):
             return True
         
     return False
-
-        
-
-
-
-# d 로 이동 체크 가능하면 이동
-# r 로 이동 체크 가능하면 이동 
