@@ -137,6 +137,8 @@ for i in range(t):
                                 visited[x][y] = True
                                 queue.append((x,y))
 
+                            del doors[graph[sx][sy].upper()]
+
 
         return answer
 
