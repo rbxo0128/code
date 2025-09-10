@@ -22,7 +22,7 @@ for i in range(l):
 stack = deque()
 stack.append((1,1))
 
-#RLUD
+#RDLU
 directions = [(0,1), (1,0),(0,-1),(-1,0)]
 
 direct = 0
