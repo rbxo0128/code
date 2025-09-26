@@ -14,8 +14,7 @@ for i in range(n):
 
     color = 0 if color == "B" else 1
 
-    if temp[color] > t:
-        temp[color] = t
+    t = max(temp[color], t)
 
     for j in range(num):
         arr.append((t+j*time[color], color))
