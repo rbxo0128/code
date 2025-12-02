@@ -22,7 +22,6 @@ def parse_readme(readme_path: Path) -> Dict:
         'problemTitle': '',
         'tierName': '',
         'tags': [],
-        'problemUrl': ''
         'content' : content
     }
     
