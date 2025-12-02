@@ -23,6 +23,7 @@ def parse_readme(readme_path: Path) -> Dict:
         'tierName': '',
         'tags': [],
         'problemUrl': ''
+        'content' : content
     }
     
     # 제목: # [Gold IV] 고층 건물 - 1027
