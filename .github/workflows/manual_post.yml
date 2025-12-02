@@ -1,0 +1,88 @@
+name: Manual Blog Post
+
+on:
+  workflow_dispatch:
+    inputs:
+      platform:
+        description: '문제 플랫폼'
+        type: choice
+        options:
+          - BOJ
+          - Programmers
+        required: true
+
+      difficulty:
+        description: '난이도 선택 (BOJ: Bronze/Silver/Gold/... Programmers: 0~5)'
+        type: string
+        required: true
+
+      problem_id:
+        description: '문제 번호 (예: BOJ: 1027 / Programmers: 42860)'
+        type: string
+        required: true
+
+      post_immediately:
+        description: '즉시 포스팅 여부'
+        type: boolean
+        default: true
+
+jobs:
+  post-to-blog:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Build problem path dynamically
+        id: build_path
+        run: |
+          PLATFORM="${{ github.event.inputs.platform }}"
+          DIFFICULTY="${{ github.event.inputs.difficulty }}"
+          ID="${{ github.event.inputs.problem_id }}"
+
+          if [[ "$PLATFORM" == "BOJ" ]]; then
+            BASE_DIR="백준"
+          else
+            BASE_DIR="프로그래머스"
+          fi
+
+          # 문제 폴더 자동 탐색 (문제 제목 반영된 폴더 찾기)
+          FOUND_PATH=$(find "$BASE_DIR/$DIFFICULTY" -maxdepth 1 -type d -name "${ID}.*" | head -n 1)
+
+          if [[ -z "$FOUND_PATH" ]]; then
+            echo "❌ 문제 폴더를 찾을 수 없습니다: $BASE_DIR/$DIFFICULTY/$ID.*"
+            exit 1
+          fi
+
+          echo "📁 경로 탐색 성공: $FOUND_PATH"
+          echo "problem_path=$FOUND_PATH" >> $GITHUB_OUTPUT
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: |
+          pip install requests
+
+      - name: Preview Problem Info
+        env:
+          PROBLEM_PATH: ${{ steps.build_path.outputs.problem_path }}
+        run: |
+          python .github/scripts/preview_problem.py "$PROBLEM_PATH"
+
+      - name: Post to Blog
+        if: github.event.inputs.post_immediately == 'true'
+        env:
+          BLOG_API_URL: ${{ secrets.BLOG_API_URL }}
+          BLOG_API_KEY: ${{ secrets.BLOG_API_KEY }}
+          PROBLEM_PATH: ${{ steps.build_path.outputs.problem_path }}
+        run: |
+          python .github/scripts/post_single_problem.py
+
+      - name: Show Preview Only
+        if: github.event.inputs.post_immediately != 'true'
+        run: |
+          echo "📋 미리보기 모드 — 실제 포스팅되지 않았습니다."

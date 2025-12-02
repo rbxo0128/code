@@ -129,11 +129,11 @@ def main():
     """메인 함수"""
     
     problem_path = os.environ.get('PROBLEM_PATH')
-    
+
     if not problem_path:
         print("❌ PROBLEM_PATH environment variable not set")
         return
-    
+
     problem_dir = Path(problem_path)
     
     if not problem_dir.exists():
