@@ -83,10 +83,12 @@ jobs:
             BASE_DIR="프로그래머스"
           fi
 
+          # 쉼표로 분리
           IFS=',' read -ra PROBLEM_IDS <<< "$IDS"
 
           for ID in "${PROBLEM_IDS[@]}"; do
             ID=$(echo "$ID" | xargs)  # 공백 제거
+            echo "🔎 탐색: $BASE_DIR/$DIFFICULTY/$ID.*"
             FOUND_PATH=$(find "$BASE_DIR/$DIFFICULTY" -maxdepth 1 -type d -name "${ID}.*" | head -n 1)
 
             if [[ -z "$FOUND_PATH" ]]; then
