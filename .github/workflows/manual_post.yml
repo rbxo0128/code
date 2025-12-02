@@ -34,39 +34,6 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      - name: Build problem path dynamically
-        id: build_path
-        run: |
-          PLATFORM="${{ github.event.inputs.platform }}"
-          DIFFICULTY="${{ github.event.inputs.difficulty }}"
-          ID="${{ github.event.inputs.problem_id }}"
-
-          if [[ "$PLATFORM" == "BOJ" ]]; then
-            BASE_DIR="백준"
-          else
-            BASE_DIR="프로그래머스"
-          fi
-
-          # 문제 폴더 자동 탐색 (문제 제목 반영된 폴더 찾기)
-          FOUND_PATH=$(find "$BASE_DIR/$DIFFICULTY" -maxdepth 1 -type d -name "${ID}.*" | head -n 1)
-
-          if [[ -z "$FOUND_PATH" ]]; then
-            echo "❌ 문제 폴더를 찾을 수 없습니다: $BASE_DIR/$DIFFICULTY/$ID.*"
-            exit 1
-          fi
-
-          echo "📁 경로 탐색 성공: $FOUND_PATH"
-          echo "problem_path=$FOUND_PATH" >> $GITHUB_OUTPUT
-
-      - name: Set up Python
-        uses: actions/setup-python@v4
-        with:
-          python-version: "3.11"
-
-      - name: Install dependencies
-        run: |
-          pip install requests
-
       - name: Post to Blog (multiple)
         if: github.event.inputs.post_immediately == 'true'
         env:
