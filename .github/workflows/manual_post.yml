@@ -67,12 +67,6 @@ jobs:
         run: |
           pip install requests
 
-      - name: Preview Problem Info
-        env:
-          PROBLEM_PATH: ${{ steps.build_path.outputs.problem_path }}
-        run: |
-          python .github/scripts/manual_post.py "$PROBLEM_PATH"
-
       - name: Post to Blog
         if: github.event.inputs.post_immediately == 'true'
         env:
