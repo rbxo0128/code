@@ -32,11 +32,6 @@ def parse_readme(readme_path: Path) -> Dict:
         data['problemTitle'] = title_match.group(2).strip()
         data['problemId'] = title_match.group(3).strip()
     
-    # 문제 링크
-    link_match = re.search(r'\[문제 링크\]\((https://[^\)]+)\)', content)
-    if link_match:
-        data['problemUrl'] = link_match.group(1)
-    
     # 분류 (태그)
     tags_section = re.search(r'### 분류\s*\n\s*(.+)', content)
     if tags_section:
