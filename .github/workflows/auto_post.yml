@@ -19,12 +19,15 @@ jobs:
           fetch-depth: 2   # 이전 커밋과 diff 비교용
 
       - name: Detect newly added problem directories
-        id: detect
         run: |
           echo "🔍 변경된 파일 탐색 중..."
 
-          # 새로 추가된 README.md만 추출 (escape 문제 해결)
-          git diff --name-only --diff-filter=A HEAD~1 HEAD \
+          BEFORE="${{ github.event.before }}"
+          AFTER="${{ github.sha }}"
+
+          echo "🔁 Diff range: $BEFORE → $AFTER"
+
+          git diff --name-only --diff-filter=A "$BEFORE" "$AFTER" \
           | grep 'README.md$' \
           | while read -r file; do
               dirname "$file"
@@ -52,3 +55,4 @@ jobs:
             echo "⏱ 5초 대기..."
             sleep 5
           done < problem_dirs.txt
+
