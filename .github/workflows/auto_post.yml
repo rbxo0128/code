@@ -23,18 +23,17 @@ jobs:
         run: |
           echo "🔍 변경된 파일 탐색 중..."
 
-          git diff --name-status HEAD~1 HEAD > diff.txt
-
-          echo "📄 diff 내용:"
-          cat diff.txt
-
-          # 새로 추가된 README.md 기준으로 문제 폴더 추출
-          awk '$1=="A" && $2 ~ /README.md$/ {print $2}' diff.txt \
-          | xargs -n1 dirname \
+          # 새로 추가된 README.md만 추출 (escape 문제 해결)
+          git diff --name-only --diff-filter=A HEAD~1 HEAD \
+          | grep 'README.md$' \
+          | while read -r file; do
+              dirname "$file"
+            done \
           | sort -u > problem_dirs.txt
 
           echo "📁 새로 추가된 문제 폴더:"
           cat problem_dirs.txt || true
+
 
       - name: Auto post new problems
         env:
