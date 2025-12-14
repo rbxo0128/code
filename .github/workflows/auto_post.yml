@@ -1,0 +1,55 @@
+name: Auto Blog Post (BaekjoonHub)
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "백준/**"
+      - "프로그래머스/**"
+
+jobs:
+  auto-post:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 2   # 이전 커밋과 diff 비교용
+
+      - name: Detect newly added problem directories
+        id: detect
+        run: |
+          echo "🔍 변경된 파일 탐색 중..."
+
+          git diff --name-status HEAD~1 HEAD > diff.txt
+
+          echo "📄 diff 내용:"
+          cat diff.txt
+
+          # 새로 추가된 README.md 기준으로 문제 폴더 추출
+          awk '$1=="A" && $2 ~ /README.md$/ {print $2}' diff.txt \
+          | xargs -n1 dirname \
+          | sort -u > problem_dirs.txt
+
+          echo "📁 새로 추가된 문제 폴더:"
+          cat problem_dirs.txt || true
+
+      - name: Auto post new problems
+        env:
+          BLOG_API_URL: ${{ secrets.BLOG_API_URL }}
+          BLOG_API_KEY: ${{ secrets.BLOG_API_KEY }}
+        run: |
+          if [ ! -s problem_dirs.txt ]; then
+            echo "📭 새로 추가된 문제가 없습니다. 종료합니다."
+            exit 0
+          fi
+
+          while read PROBLEM_PATH; do
+            echo "🚀 자동 포스팅 시작: $PROBLEM_PATH"
+            PROBLEM_PATH="$PROBLEM_PATH" python .github/scripts/post_single_problem.py
+
+            echo "⏱ 5초 대기..."
+            sleep 5
+          done < problem_dirs.txt
