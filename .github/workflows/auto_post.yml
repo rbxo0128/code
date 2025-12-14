@@ -22,6 +22,8 @@ jobs:
         run: |
           echo "🔍 변경된 파일 탐색 중..."
 
+          git config --global core.quotepath false
+
           BEFORE="${{ github.event.before }}"
           AFTER="${{ github.sha }}"
 
@@ -36,6 +38,7 @@ jobs:
 
           echo "📁 새로 추가된 문제 폴더:"
           cat problem_dirs.txt || true
+
 
 
       - name: Auto post new problems
@@ -55,4 +58,5 @@ jobs:
             echo "⏱ 5초 대기..."
             sleep 5
           done < problem_dirs.txt
+
 
