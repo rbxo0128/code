@@ -17,7 +17,7 @@ def parse_readme(readme_path: Path) -> Dict:
     content = readme_path.read_text(encoding='utf-8')
     
     data = {
-        'platform': 'BOJ',
+        'platform': '백준',
         'problemId': '',
         'problemTitle': '',
         'tierName': '',
@@ -144,6 +144,11 @@ def main():
     print(f"\n📂 문제 경로: {problem_dir}")
     
     problem_data = parse_readme(readme_path)
+
+    if "백준" in str(problem_dir):
+        problem_data['platform'] = "백준"
+    elif "프로그래머스" in str(problem_dir):
+        problem_data['platform'] = "프로그래머스"
     
     # 풀이 코드 찾기
     solution_file = find_solution_file(problem_dir)
@@ -174,4 +179,5 @@ def main():
 
 
 if __name__ == '__main__':
+
     main()
