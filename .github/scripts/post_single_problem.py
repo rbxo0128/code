@@ -75,6 +75,7 @@ def post_to_blog(problem_data: Dict, code: str, language: str) -> bool:
     
     blog_api_url = os.environ.get('BLOG_API_URL')
     blog_api_key = os.environ.get('BLOG_API_KEY')
+    blog_proxy = os.environ.get('BLOG_PROXY')
     
     if not blog_api_url or not blog_api_key:
         print("❌ Missing environment variables: BLOG_API_URL or BLOG_API_KEY")
@@ -88,7 +89,8 @@ def post_to_blog(problem_data: Dict, code: str, language: str) -> bool:
     
     headers = {
         'Content-Type': 'application/json',
-        'X-API-Key': blog_api_key
+        'X-API-Key': blog_api_key,
+        'X-Proxy-Secret': blog_proxy
     }
     
     print(f"\n📤 포스팅 중...")

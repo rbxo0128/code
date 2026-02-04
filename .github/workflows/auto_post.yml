@@ -45,6 +45,7 @@ jobs:
         env:
           BLOG_API_URL: ${{ secrets.BLOG_API_URL }}
           BLOG_API_KEY: ${{ secrets.BLOG_API_KEY }}
+          BLOG_PROXY: ${{ secrets.BLOG_PROXY}}
         run: |
           if [ ! -s problem_dirs.txt ]; then
             echo "📭 새로 추가된 문제가 없습니다. 종료합니다."
