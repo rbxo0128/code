@@ -103,7 +103,7 @@ def post_to_blog(problem_data: Dict, code: str, language: str) -> bool:
             blog_api_url,
             json=payload,
             headers=headers,
-            timeout=60
+            timeout=180
         )
         
         if response.status_code == 200:
