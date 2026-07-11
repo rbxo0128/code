@@ -4,27 +4,31 @@ on:
   workflow_dispatch:
     inputs:
       platform:
-        description: '문제 플랫폼'
+        description: "문제 플랫폼"
         type: choice
         options:
           - BOJ
           - Programmers
+          - LeetCode
         required: true
 
       difficulty:
-        description: '난이도 선택 (BOJ: Bronze/Silver/Gold/... Programmers: 0~5)'
+        description: "난이도 (BOJ: Bronze/Silver/Gold/..., Programmers: 0~5, LeetCode: Easy/Medium/Hard)"
         type: string
         required: true
 
       problem_id:
-        description: '문제 번호 (쉼표로 여러 개 입력 가능, 예: 1027,1002,1003)'
+        description: "문제 번호 (쉼표로 여러 개 입력 가능, 예: 1,3,2095)"
         type: string
         required: true
 
       post_immediately:
-        description: '즉시 포스팅 여부'
+        description: "즉시 포스팅 여부"
         type: boolean
         default: true
+
+permissions:
+  contents: read
 
 jobs:
   post-to-blog:
@@ -32,46 +36,72 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
-      - name: Post to Blog (multiple)
-        if: github.event.inputs.post_immediately == 'true'
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: python -m pip install --disable-pip-version-check requests
+
+      - name: Post selected problems
         env:
           BLOG_API_URL: ${{ secrets.BLOG_API_URL }}
           BLOG_API_KEY: ${{ secrets.BLOG_API_KEY }}
           BLOG_PROXY: ${{ secrets.BLOG_PROXY }}
+        shell: bash
         run: |
-          PLATFORM="${{ github.event.inputs.platform }}"
-          DIFFICULTY="${{ github.event.inputs.difficulty }}"
-          IDS="${{ github.event.inputs.problem_id }}"
+          set -euo pipefail
 
-          if [[ "$PLATFORM" == "BOJ" ]]; then
-            BASE_DIR="백준"
-          else
-            BASE_DIR="프로그래머스"
+          PLATFORM="${{ inputs.platform }}"
+          DIFFICULTY="${{ inputs.difficulty }}"
+          IDS="${{ inputs.problem_id }}"
+          POST_IMMEDIATELY="${{ inputs.post_immediately }}"
+
+          case "$PLATFORM" in
+            BOJ) BASE_DIR="백준" ;;
+            Programmers) BASE_DIR="프로그래머스" ;;
+            LeetCode) BASE_DIR="리트코드" ;;
+            *) echo "❌ 지원하지 않는 플랫폼: $PLATFORM"; exit 1 ;;
+          esac
+
+          TARGET_DIR="$BASE_DIR/$DIFFICULTY"
+          if [[ ! -d "$TARGET_DIR" ]]; then
+            echo "❌ 난이도 폴더가 없습니다: $TARGET_DIR"
+            exit 1
           fi
 
-          # 쉼표로 분리
+          if [[ "$POST_IMMEDIATELY" == "true" ]]; then
+            export DRY_RUN="false"
+          else
+            export DRY_RUN="true"
+          fi
+
           IFS=',' read -ra PROBLEM_IDS <<< "$IDS"
+          FOUND_COUNT=0
 
-          for ID in "${PROBLEM_IDS[@]}"; do
-            ID=$(echo "$ID" | xargs)  # 공백 제거
-            echo "🔎 탐색: $BASE_DIR/$DIFFICULTY/$ID.*"
-            FOUND_PATH=$(find "$BASE_DIR/$DIFFICULTY" -maxdepth 1 -type d -name "${ID}.*" | head -n 1)
-
-            if [[ -z "$FOUND_PATH" ]]; then
-              echo "❌ 문제 폴더를 찾을 수 없습니다: $BASE_DIR/$DIFFICULTY/$ID.*"
+          for RAW_ID in "${PROBLEM_IDS[@]}"; do
+            ID="$(echo "$RAW_ID" | xargs)"
+            if [[ ! "$ID" =~ ^[0-9]+$ ]]; then
+              echo "⚠️ 잘못된 문제 번호를 건너뜁니다: $ID"
               continue
             fi
 
-            echo "📁 포스팅 시작: $FOUND_PATH"
-            PROBLEM_PATH="$FOUND_PATH" python .github/scripts/post_single_problem.py
+            echo "🔎 탐색: $TARGET_DIR/$ID.*"
+            FOUND_PATH="$(find "$TARGET_DIR" -maxdepth 1 -type d -name "${ID}.*" -print -quit)"
 
-            echo "⏱ 5초 대기..."
-            sleep 5
+            if [[ -z "$FOUND_PATH" ]]; then
+              echo "❌ 문제 폴더를 찾을 수 없습니다: $TARGET_DIR/$ID.*"
+              continue
+            fi
+
+            FOUND_COUNT=$((FOUND_COUNT + 1))
+            PROBLEM_PATH="$FOUND_PATH" python .github/scripts/post_single_problem.py
           done
 
-      - name: Show Preview Only
-        if: github.event.inputs.post_immediately != 'true'
-        run: |
-          echo "📋 미리보기 모드 — 실제 포스팅되지 않았습니다."
+          if [[ "$FOUND_COUNT" -eq 0 ]]; then
+            echo "❌ 처리할 문제를 찾지 못했습니다."
+            exit 1
+          fi
