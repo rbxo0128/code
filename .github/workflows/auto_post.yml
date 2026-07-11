@@ -24,7 +24,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
-          fetch-depth: 2
+          fetch-depth: 0
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -34,7 +34,7 @@ jobs:
       - name: Install dependencies
         run: python -m pip install --disable-pip-version-check requests
 
-      - name: Detect newly added problem directories
+      - name: Detect newly added solution directories
         shell: bash
         run: |
           set -euo pipefail
@@ -46,12 +46,33 @@ jobs:
           echo "🔁 Diff range: $BEFORE → $AFTER"
 
           if [[ "$BEFORE" =~ ^0+$ ]]; then
-            git diff-tree --no-commit-id --name-only --diff-filter=A -r "$AFTER"
+            CHANGED_FILES="$(git diff-tree               --no-commit-id               --name-only               --diff-filter=A               -r "$AFTER")"
           else
-            git diff --name-only --diff-filter=A "$BEFORE" "$AFTER"
-          fi             | grep -E '^(백준|프로그래머스|리트코드)/.+/README\.md$'             | while IFS= read -r file; do dirname "$file"; done             | sort -u > problem_dirs.txt || true
+            CHANGED_FILES="$(git diff               --name-only               --diff-filter=A               "$BEFORE" "$AFTER")"
+          fi
 
-          echo "📁 새로 추가된 문제 폴더:"
+          echo "📝 새로 추가된 파일:"
+          printf '%s\n' "$CHANGED_FILES"
+
+          : > problem_dirs.txt
+
+          while IFS= read -r file; do
+            [[ -z "$file" ]] && continue
+
+            case "$file" in
+              백준/*|프로그래머스/*|리트코드/*)
+                case "$file" in
+                  *.py|*.java|*.cpp|*.cc|*.cxx|*.c|*.js|*.ts|*.kt|*.swift|*.go|*.rs|*.sql|*.rb|*.php|*.scala|*.sh)
+                    dirname "$file" >> problem_dirs.txt
+                    ;;
+                esac
+                ;;
+            esac
+          done <<< "$CHANGED_FILES"
+
+          sort -u -o problem_dirs.txt problem_dirs.txt
+
+          echo "📁 새 풀이가 추가된 문제 폴더:"
           cat problem_dirs.txt || true
 
       - name: Auto post new problems
@@ -64,12 +85,18 @@ jobs:
           set -euo pipefail
 
           if [[ ! -s problem_dirs.txt ]]; then
-            echo "📭 새로 추가된 문제가 없습니다."
+            echo "📭 새로 추가된 풀이가 없습니다."
             exit 0
           fi
 
           while IFS= read -r PROBLEM_PATH; do
             [[ -z "$PROBLEM_PATH" ]] && continue
+
+            if [[ ! -f "$PROBLEM_PATH/README.md" ]]; then
+              echo "❌ README.md가 없습니다: $PROBLEM_PATH"
+              exit 1
+            fi
+
             echo "🚀 자동 포스팅 시작: $PROBLEM_PATH"
-            PROBLEM_PATH="$PROBLEM_PATH" python .github/scripts/post_single_problem.py
+            PROBLEM_PATH="$PROBLEM_PATH"               python .github/scripts/post_single_problem.py
           done < problem_dirs.txt
