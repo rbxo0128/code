@@ -4,37 +4,11 @@
 <!---LeetCode Topics Start-->
 # 리트코드 풀이 목록
 
-## 그리디
-| 문제 | 난이도 |
-| --- | --- |
-| [1833. Maximum Ice Cream Bars](https://github.com/rbxo0128/code/tree/main/%EB%A6%AC%ED%8A%B8%EC%BD%94%EB%93%9C/Medium/1833.%20Maximum%20Ice%20Cream%20Bars/) | 보통 |
-
-## 누적 합
-| 문제 | 난이도 |
-| --- | --- |
-| [1732. Find the Highest Altitude](https://github.com/rbxo0128/code/tree/main/%EB%A6%AC%ED%8A%B8%EC%BD%94%EB%93%9C/Easy/1732.%20Find%20the%20Highest%20Altitude/) | 쉬움 |
-
-## 배열
-| 문제 | 난이도 |
-| --- | --- |
-| [1732. Find the Highest Altitude](https://github.com/rbxo0128/code/tree/main/%EB%A6%AC%ED%8A%B8%EC%BD%94%EB%93%9C/Easy/1732.%20Find%20the%20Highest%20Altitude/) | 쉬움 |
-| [1833. Maximum Ice Cream Bars](https://github.com/rbxo0128/code/tree/main/%EB%A6%AC%ED%8A%B8%EC%BD%94%EB%93%9C/Medium/1833.%20Maximum%20Ice%20Cream%20Bars/) | 보통 |
-| [1840. Maximum Building Height](https://github.com/rbxo0128/code/tree/main/%EB%A6%AC%ED%8A%B8%EC%BD%94%EB%93%9C/Hard/1840.%20Maximum%20Building%20Height/) | 어려움 |
-
-## 수학
-| 문제 | 난이도 |
-| --- | --- |
-| [1344. Angle Between Hands of a Clock](https://github.com/rbxo0128/code/tree/main/%EB%A6%AC%ED%8A%B8%EC%BD%94%EB%93%9C/Medium/1344.%20Angle%20Between%20Hands%20of%20a%20Clock/) | 보통 |
-| [1840. Maximum Building Height](https://github.com/rbxo0128/code/tree/main/%EB%A6%AC%ED%8A%B8%EC%BD%94%EB%93%9C/Hard/1840.%20Maximum%20Building%20Height/) | 어려움 |
-
-## 정렬
-| 문제 | 난이도 |
-| --- | --- |
-| [1833. Maximum Ice Cream Bars](https://github.com/rbxo0128/code/tree/main/%EB%A6%AC%ED%8A%B8%EC%BD%94%EB%93%9C/Medium/1833.%20Maximum%20Ice%20Cream%20Bars/) | 보통 |
-| [1840. Maximum Building Height](https://github.com/rbxo0128/code/tree/main/%EB%A6%AC%ED%8A%B8%EC%BD%94%EB%93%9C/Hard/1840.%20Maximum%20Building%20Height/) | 어려움 |
-
-## Counting Sort
-| 문제 | 난이도 |
-| --- | --- |
-| [1833. Maximum Ice Cream Bars](https://github.com/rbxo0128/code/tree/main/%EB%A6%AC%ED%8A%B8%EC%BD%94%EB%93%9C/Medium/1833.%20Maximum%20Ice%20Cream%20Bars/) | 보통 |
+| 번호 | 문제 | 난이도 | 분류 |
+| ---: | --- | --- | --- |
+| 1344 | [Angle Between Hands of a Clock](https://github.com/rbxo0128/code/tree/main/%EB%A6%AC%ED%8A%B8%EC%BD%94%EB%93%9C/Medium/1344.%20Angle%20Between%20Hands%20of%20a%20Clock/) | 보통 | 수학 |
+| 1732 | [Find the Highest Altitude](https://github.com/rbxo0128/code/tree/main/%EB%A6%AC%ED%8A%B8%EC%BD%94%EB%93%9C/Easy/1732.%20Find%20the%20Highest%20Altitude/) | 쉬움 | 누적 합, 배열 |
+| 1833 | [Maximum Ice Cream Bars](https://github.com/rbxo0128/code/tree/main/%EB%A6%AC%ED%8A%B8%EC%BD%94%EB%93%9C/Medium/1833.%20Maximum%20Ice%20Cream%20Bars/) | 보통 | 그리디, 배열, 정렬, Counting Sort |
+| 1840 | [Maximum Building Height](https://github.com/rbxo0128/code/tree/main/%EB%A6%AC%ED%8A%B8%EC%BD%94%EB%93%9C/Hard/1840.%20Maximum%20Building%20Height/) | 어려움 | 배열, 수학, 정렬 |
+| 3658 | [GCD of Odd and Even Sums](https://github.com/rbxo0128/code/tree/main/%EB%A6%AC%ED%8A%B8%EC%BD%94%EB%93%9C/Easy/3658.%20GCD%20of%20Odd%20and%20Even%20Sums/) | 쉬움 | 수학, 정수론 |
 <!---LeetCode Topics End-->
