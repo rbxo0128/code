@@ -21,7 +21,7 @@ class Solution:
 
         visited = [[[False] * (1 << keys_cnt) for _ in range(m)] for _ in range(n)]
         
-        queue = deque([(start[0],start[1],1,0)])
+        queue = deque([(start[0],start[1],0,0)])
         visited[start[0]][start[1]][0] = True
         directions = [(1,0),(-1,0),(0,1),(0,-1)]
         target = (1 << keys_cnt) - 1
@@ -36,8 +36,7 @@ class Solution:
                     elif g[sx][sy].islower():
                         next_key = key | (1 << keys_idx[g[sx][sy]])
                         if next_key == target:
-                            return cnt
-                        
+                            return cnt + 1
                         if not visited[sx][sy][next_key]:
                             queue.append((sx,sy,cnt+1,next_key))
                             visited[sx][sy][next_key] = True
