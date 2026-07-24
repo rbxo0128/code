@@ -9,6 +9,7 @@
 | 11 | [Container With Most Water](https://github.com/rbxo0128/code/tree/main/%EB%A6%AC%ED%8A%B8%EC%BD%94%EB%93%9C/Medium/11.%20Container%20With%20Most%20Water/) | 보통 | 그리디, 배열, 투 포인터 |
 | 35 | [Search Insert Position](https://github.com/rbxo0128/code/tree/main/%EB%A6%AC%ED%8A%B8%EC%BD%94%EB%93%9C/Easy/35.%20Search%20Insert%20Position/) | 쉬움 | 배열, 이분 탐색 |
 | 176 | [Second Highest Salary](https://github.com/rbxo0128/code/tree/main/%EB%A6%AC%ED%8A%B8%EC%BD%94%EB%93%9C/Medium/176.%20Second%20Highest%20Salary/) | 보통 | 데이터베이스 |
+| 529 | [Minesweeper](https://github.com/rbxo0128/code/tree/main/%EB%A6%AC%ED%8A%B8%EC%BD%94%EB%93%9C/Medium/529.%20Minesweeper/) | 보통 | 깊이 우선 탐색, 너비 우선 탐색, 배열, 행렬 |
 | 864 | [Shortest Path to Get All Keys](https://github.com/rbxo0128/code/tree/main/%EB%A6%AC%ED%8A%B8%EC%BD%94%EB%93%9C/Hard/864.%20Shortest%20Path%20to%20Get%20All%20Keys/) | 어려움 | 너비 우선 탐색, 배열, 비트 조작, 행렬 |
 | 1081 | [Smallest Subsequence of Distinct Characters](https://github.com/rbxo0128/code/tree/main/%EB%A6%AC%ED%8A%B8%EC%BD%94%EB%93%9C/Medium/1081.%20Smallest%20Subsequence%20of%20Distinct%20Characters/) | 보통 | 그리디, 단조 스택, 문자열, 스택 |
 | 1091 | [Shortest Path in Binary Matrix](https://github.com/rbxo0128/code/tree/main/%EB%A6%AC%ED%8A%B8%EC%BD%94%EB%93%9C/Medium/1091.%20Shortest%20Path%20in%20Binary%20Matrix/) | 보통 | 너비 우선 탐색, 배열, 행렬 |
