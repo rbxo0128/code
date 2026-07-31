@@ -19,6 +19,7 @@
 | 1732 | [Find the Highest Altitude](https://github.com/rbxo0128/code/tree/main/%EB%A6%AC%ED%8A%B8%EC%BD%94%EB%93%9C/Easy/1732.%20Find%20the%20Highest%20Altitude/) | 쉬움 | 누적 합, 배열 |
 | 1833 | [Maximum Ice Cream Bars](https://github.com/rbxo0128/code/tree/main/%EB%A6%AC%ED%8A%B8%EC%BD%94%EB%93%9C/Medium/1833.%20Maximum%20Ice%20Cream%20Bars/) | 보통 | 그리디, 배열, 정렬, Counting Sort |
 | 1840 | [Maximum Building Height](https://github.com/rbxo0128/code/tree/main/%EB%A6%AC%ED%8A%B8%EC%BD%94%EB%93%9C/Hard/1840.%20Maximum%20Building%20Height/) | 어려움 | 배열, 수학, 정렬 |
+| 3014 | [Minimum Number of Pushes to Type Word I](https://github.com/rbxo0128/code/tree/main/%EB%A6%AC%ED%8A%B8%EC%BD%94%EB%93%9C/Easy/3014.%20Minimum%20Number%20of%20Pushes%20to%20Type%20Word%20I/) | 쉬움 | 그리디, 문자열, 수학 |
 | 3517 | [Smallest Palindromic Rearrangement I](https://github.com/rbxo0128/code/tree/main/%EB%A6%AC%ED%8A%B8%EC%BD%94%EB%93%9C/Medium/3517.%20Smallest%20Palindromic%20Rearrangement%20I/) | 보통 | 문자열, 정렬, Counting Sort |
 | 3518 | [Smallest Palindromic Rearrangement II](https://github.com/rbxo0128/code/tree/main/%EB%A6%AC%ED%8A%B8%EC%BD%94%EB%93%9C/Hard/3518.%20Smallest%20Palindromic%20Rearrangement%20II/) | 어려움 | 문자열, 수학, 조합론, 카운팅, 해시 테이블 |
 | 3658 | [GCD of Odd and Even Sums](https://github.com/rbxo0128/code/tree/main/%EB%A6%AC%ED%8A%B8%EC%BD%94%EB%93%9C/Easy/3658.%20GCD%20of%20Odd%20and%20Even%20Sums/) | 쉬움 | 수학, 정수론 |
