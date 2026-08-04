@@ -24,5 +24,6 @@
 | 3517 | [Smallest Palindromic Rearrangement I](https://github.com/rbxo0128/code/tree/main/%EB%A6%AC%ED%8A%B8%EC%BD%94%EB%93%9C/Medium/3517.%20Smallest%20Palindromic%20Rearrangement%20I/) | 보통 | 문자열, 정렬, Counting Sort |
 | 3518 | [Smallest Palindromic Rearrangement II](https://github.com/rbxo0128/code/tree/main/%EB%A6%AC%ED%8A%B8%EC%BD%94%EB%93%9C/Hard/3518.%20Smallest%20Palindromic%20Rearrangement%20II/) | 어려움 | 문자열, 수학, 조합론, 카운팅, 해시 테이블 |
 | 3658 | [GCD of Odd and Even Sums](https://github.com/rbxo0128/code/tree/main/%EB%A6%AC%ED%8A%B8%EC%BD%94%EB%93%9C/Easy/3658.%20GCD%20of%20Odd%20and%20Even%20Sums/) | 쉬움 | 수학, 정수론 |
+| 3731 | [Find Missing Elements](https://github.com/rbxo0128/code/tree/main/%EB%A6%AC%ED%8A%B8%EC%BD%94%EB%93%9C/Easy/3731.%20Find%20Missing%20Elements/) | 쉬움 | 배열, 정렬, 해시 테이블 |
 | 3867 | [Sum of GCD of Formed Pairs](https://github.com/rbxo0128/code/tree/main/%EB%A6%AC%ED%8A%B8%EC%BD%94%EB%93%9C/Medium/3867.%20Sum%20of%20GCD%20of%20Formed%20Pairs/) | 보통 | 배열, 수학, 시뮬레이션, 정렬, 정수론, 투 포인터 |
 <!---LeetCode Topics End-->
