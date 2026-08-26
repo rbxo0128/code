@@ -19,6 +19,7 @@
 | 1732 | [Find the Highest Altitude](https://github.com/rbxo0128/code/tree/main/%EB%A6%AC%ED%8A%B8%EC%BD%94%EB%93%9C/Easy/1732.%20Find%20the%20Highest%20Altitude/) | 쉬움 | 누적 합, 배열 |
 | 1833 | [Maximum Ice Cream Bars](https://github.com/rbxo0128/code/tree/main/%EB%A6%AC%ED%8A%B8%EC%BD%94%EB%93%9C/Medium/1833.%20Maximum%20Ice%20Cream%20Bars/) | 보통 | 그리디, 배열, 정렬, Counting Sort |
 | 1840 | [Maximum Building Height](https://github.com/rbxo0128/code/tree/main/%EB%A6%AC%ED%8A%B8%EC%BD%94%EB%93%9C/Hard/1840.%20Maximum%20Building%20Height/) | 어려움 | 배열, 수학, 정렬 |
+| 2904 | [Shortest and Lexicographically Smallest Beautiful String](https://github.com/rbxo0128/code/tree/main/%EB%A6%AC%ED%8A%B8%EC%BD%94%EB%93%9C/Medium/2904.%20Shortest%20and%20Lexicographically%20Smallest%20Beautiful%20String/) | 보통 | 문자열, 슬라이딩 윈도우 |
 | 2958 | [Length of Longest Subarray With at Most K Frequency](https://github.com/rbxo0128/code/tree/main/%EB%A6%AC%ED%8A%B8%EC%BD%94%EB%93%9C/Medium/2958.%20Length%20of%20Longest%20Subarray%20With%20at%20Most%20K%20Frequency/) | 보통 | 배열, 슬라이딩 윈도우, 해시 테이블 |
 | 3014 | [Minimum Number of Pushes to Type Word I](https://github.com/rbxo0128/code/tree/main/%EB%A6%AC%ED%8A%B8%EC%BD%94%EB%93%9C/Easy/3014.%20Minimum%20Number%20of%20Pushes%20to%20Type%20Word%20I/) | 쉬움 | 그리디, 문자열, 수학 |
 | 3016 | [Minimum Number of Pushes to Type Word II](https://github.com/rbxo0128/code/tree/main/%EB%A6%AC%ED%8A%B8%EC%BD%94%EB%93%9C/Medium/3016.%20Minimum%20Number%20of%20Pushes%20to%20Type%20Word%20II/) | 보통 | 그리디, 문자열, 정렬, 카운팅, 해시 테이블 |
