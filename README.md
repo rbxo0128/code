@@ -11,6 +11,7 @@
 | 115 | [Distinct Subsequences](https://github.com/rbxo0128/code/tree/main/%EB%A6%AC%ED%8A%B8%EC%BD%94%EB%93%9C/Hard/115.%20Distinct%20Subsequences/) | 어려움 | 동적 계획법, 문자열 |
 | 176 | [Second Highest Salary](https://github.com/rbxo0128/code/tree/main/%EB%A6%AC%ED%8A%B8%EC%BD%94%EB%93%9C/Medium/176.%20Second%20Highest%20Salary/) | 보통 | 데이터베이스 |
 | 529 | [Minesweeper](https://github.com/rbxo0128/code/tree/main/%EB%A6%AC%ED%8A%B8%EC%BD%94%EB%93%9C/Medium/529.%20Minesweeper/) | 보통 | 깊이 우선 탐색, 너비 우선 탐색, 배열, 행렬 |
+| 695 | [Max Area of Island](https://github.com/rbxo0128/code/tree/main/%EB%A6%AC%ED%8A%B8%EC%BD%94%EB%93%9C/Medium/695.%20Max%20Area%20of%20Island/) | 보통 | 깊이 우선 탐색, 너비 우선 탐색, 배열, 행렬, Union-Find |
 | 827 | [Making A Large Island](https://github.com/rbxo0128/code/tree/main/%EB%A6%AC%ED%8A%B8%EC%BD%94%EB%93%9C/Hard/827.%20Making%20A%20Large%20Island/) | 어려움 | 깊이 우선 탐색, 너비 우선 탐색, 배열, 행렬, Union-Find |
 | 836 | [Rectangle Overlap](https://github.com/rbxo0128/code/tree/main/%EB%A6%AC%ED%8A%B8%EC%BD%94%EB%93%9C/Easy/836.%20Rectangle%20Overlap/) | 쉬움 | 기하학, 수학 |
 | 864 | [Shortest Path to Get All Keys](https://github.com/rbxo0128/code/tree/main/%EB%A6%AC%ED%8A%B8%EC%BD%94%EB%93%9C/Hard/864.%20Shortest%20Path%20to%20Get%20All%20Keys/) | 어려움 | 너비 우선 탐색, 배열, 비트 조작, 행렬 |
