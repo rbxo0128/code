@@ -20,6 +20,7 @@
 | 1260 | [Shift 2D Grid](https://github.com/rbxo0128/code/tree/main/%EB%A6%AC%ED%8A%B8%EC%BD%94%EB%93%9C/Easy/1260.%20Shift%202D%20Grid/) | 쉬움 | 배열, 시뮬레이션, 행렬 |
 | 1291 | [Sequential Digits](https://github.com/rbxo0128/code/tree/main/%EB%A6%AC%ED%8A%B8%EC%BD%94%EB%93%9C/Medium/1291.%20Sequential%20Digits/) | 보통 | 완전 탐색 |
 | 1344 | [Angle Between Hands of a Clock](https://github.com/rbxo0128/code/tree/main/%EB%A6%AC%ED%8A%B8%EC%BD%94%EB%93%9C/Medium/1344.%20Angle%20Between%20Hands%20of%20a%20Clock/) | 보통 | 수학 |
+| 1477 | [Find Two Non-overlapping Sub-arrays Each With Target Sum](https://github.com/rbxo0128/code/tree/main/%EB%A6%AC%ED%8A%B8%EC%BD%94%EB%93%9C/Medium/1477.%20Find%20Two%20Non-overlapping%20Sub-arrays%20Each%20With%20Target%20Sum/) | 보통 | 동적 계획법, 배열, 슬라이딩 윈도우, 이분 탐색, 해시 테이블 |
 | 1732 | [Find the Highest Altitude](https://github.com/rbxo0128/code/tree/main/%EB%A6%AC%ED%8A%B8%EC%BD%94%EB%93%9C/Easy/1732.%20Find%20the%20Highest%20Altitude/) | 쉬움 | 누적 합, 배열 |
 | 1833 | [Maximum Ice Cream Bars](https://github.com/rbxo0128/code/tree/main/%EB%A6%AC%ED%8A%B8%EC%BD%94%EB%93%9C/Medium/1833.%20Maximum%20Ice%20Cream%20Bars/) | 보통 | 그리디, 배열, 정렬, Counting Sort |
 | 1840 | [Maximum Building Height](https://github.com/rbxo0128/code/tree/main/%EB%A6%AC%ED%8A%B8%EC%BD%94%EB%93%9C/Hard/1840.%20Maximum%20Building%20Height/) | 어려움 | 배열, 수학, 정렬 |
