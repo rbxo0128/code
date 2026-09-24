@@ -37,6 +37,7 @@
 | 3517 | [Smallest Palindromic Rearrangement I](https://github.com/rbxo0128/code/tree/main/%EB%A6%AC%ED%8A%B8%EC%BD%94%EB%93%9C/Medium/3517.%20Smallest%20Palindromic%20Rearrangement%20I/) | 보통 | 문자열, 정렬, Counting Sort |
 | 3518 | [Smallest Palindromic Rearrangement II](https://github.com/rbxo0128/code/tree/main/%EB%A6%AC%ED%8A%B8%EC%BD%94%EB%93%9C/Hard/3518.%20Smallest%20Palindromic%20Rearrangement%20II/) | 어려움 | 문자열, 수학, 조합론, 카운팅, 해시 테이블 |
 | 3524 | [Find X Value of Array I](https://github.com/rbxo0128/code/tree/main/%EB%A6%AC%ED%8A%B8%EC%BD%94%EB%93%9C/Medium/3524.%20Find%20X%20Value%20of%20Array%20I/) | 보통 | 동적 계획법, 배열, 수학 |
+| 3550 | [Smallest Index With Digit Sum Equal to Index](https://github.com/rbxo0128/code/tree/main/%EB%A6%AC%ED%8A%B8%EC%BD%94%EB%93%9C/Easy/3550.%20Smallest%20Index%20With%20Digit%20Sum%20Equal%20to%20Index/) | 쉬움 | 배열, 수학 |
 | 3658 | [GCD of Odd and Even Sums](https://github.com/rbxo0128/code/tree/main/%EB%A6%AC%ED%8A%B8%EC%BD%94%EB%93%9C/Easy/3658.%20GCD%20of%20Odd%20and%20Even%20Sums/) | 쉬움 | 수학, 정수론 |
 | 3718 | [Smallest Missing Multiple of K](https://github.com/rbxo0128/code/tree/main/%EB%A6%AC%ED%8A%B8%EC%BD%94%EB%93%9C/Easy/3718.%20Smallest%20Missing%20Multiple%20of%20K/) | 쉬움 | 배열, 해시 테이블 |
 | 3731 | [Find Missing Elements](https://github.com/rbxo0128/code/tree/main/%EB%A6%AC%ED%8A%B8%EC%BD%94%EB%93%9C/Easy/3731.%20Find%20Missing%20Elements/) | 쉬움 | 배열, 정렬, 해시 테이블 |
