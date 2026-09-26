@@ -23,6 +23,7 @@
 | 1401 | [Circle and Rectangle Overlapping](https://github.com/rbxo0128/code/tree/main/%EB%A6%AC%ED%8A%B8%EC%BD%94%EB%93%9C/Medium/1401.%20Circle%20and%20Rectangle%20Overlapping/) | 보통 | 기하학, 수학 |
 | 1477 | [Find Two Non-overlapping Sub-arrays Each With Target Sum](https://github.com/rbxo0128/code/tree/main/%EB%A6%AC%ED%8A%B8%EC%BD%94%EB%93%9C/Medium/1477.%20Find%20Two%20Non-overlapping%20Sub-arrays%20Each%20With%20Target%20Sum/) | 보통 | 동적 계획법, 배열, 슬라이딩 윈도우, 이분 탐색, 해시 테이블 |
 | 1732 | [Find the Highest Altitude](https://github.com/rbxo0128/code/tree/main/%EB%A6%AC%ED%8A%B8%EC%BD%94%EB%93%9C/Easy/1732.%20Find%20the%20Highest%20Altitude/) | 쉬움 | 누적 합, 배열 |
+| 1807 | [Evaluate the Bracket Pairs of a String](https://github.com/rbxo0128/code/tree/main/%EB%A6%AC%ED%8A%B8%EC%BD%94%EB%93%9C/Medium/1807.%20Evaluate%20the%20Bracket%20Pairs%20of%20a%20String/) | 보통 | 문자열, 배열, 해시 테이블 |
 | 1833 | [Maximum Ice Cream Bars](https://github.com/rbxo0128/code/tree/main/%EB%A6%AC%ED%8A%B8%EC%BD%94%EB%93%9C/Medium/1833.%20Maximum%20Ice%20Cream%20Bars/) | 보통 | 그리디, 배열, 정렬, Counting Sort |
 | 1840 | [Maximum Building Height](https://github.com/rbxo0128/code/tree/main/%EB%A6%AC%ED%8A%B8%EC%BD%94%EB%93%9C/Hard/1840.%20Maximum%20Building%20Height/) | 어려움 | 배열, 수학, 정렬 |
 | 2058 | [Find the Minimum and Maximum Number of Nodes Between Critical Points](https://github.com/rbxo0128/code/tree/main/%EB%A6%AC%ED%8A%B8%EC%BD%94%EB%93%9C/Medium/2058.%20Find%20the%20Minimum%20and%20Maximum%20Number%20of%20Nodes%20Between%20Critical%20Points/) | 보통 | 연결 리스트 |
