@@ -23,6 +23,7 @@
 | 1344 | [Angle Between Hands of a Clock](https://github.com/rbxo0128/code/tree/main/%EB%A6%AC%ED%8A%B8%EC%BD%94%EB%93%9C/Medium/1344.%20Angle%20Between%20Hands%20of%20a%20Clock/) | 보통 | 수학 |
 | 1401 | [Circle and Rectangle Overlapping](https://github.com/rbxo0128/code/tree/main/%EB%A6%AC%ED%8A%B8%EC%BD%94%EB%93%9C/Medium/1401.%20Circle%20and%20Rectangle%20Overlapping/) | 보통 | 기하학, 수학 |
 | 1477 | [Find Two Non-overlapping Sub-arrays Each With Target Sum](https://github.com/rbxo0128/code/tree/main/%EB%A6%AC%ED%8A%B8%EC%BD%94%EB%93%9C/Medium/1477.%20Find%20Two%20Non-overlapping%20Sub-arrays%20Each%20With%20Target%20Sum/) | 보통 | 동적 계획법, 배열, 슬라이딩 윈도우, 이분 탐색, 해시 테이블 |
+| 1614 | [Maximum Nesting Depth of the Parentheses](https://github.com/rbxo0128/code/tree/main/%EB%A6%AC%ED%8A%B8%EC%BD%94%EB%93%9C/Easy/1614.%20Maximum%20Nesting%20Depth%20of%20the%20Parentheses/) | 쉬움 | 문자열, 스택, Bracket Sequences |
 | 1732 | [Find the Highest Altitude](https://github.com/rbxo0128/code/tree/main/%EB%A6%AC%ED%8A%B8%EC%BD%94%EB%93%9C/Easy/1732.%20Find%20the%20Highest%20Altitude/) | 쉬움 | 누적 합, 배열 |
 | 1807 | [Evaluate the Bracket Pairs of a String](https://github.com/rbxo0128/code/tree/main/%EB%A6%AC%ED%8A%B8%EC%BD%94%EB%93%9C/Medium/1807.%20Evaluate%20the%20Bracket%20Pairs%20of%20a%20String/) | 보통 | 문자열, 배열, 해시 테이블 |
 | 1833 | [Maximum Ice Cream Bars](https://github.com/rbxo0128/code/tree/main/%EB%A6%AC%ED%8A%B8%EC%BD%94%EB%93%9C/Medium/1833.%20Maximum%20Ice%20Cream%20Bars/) | 보통 | 그리디, 배열, 정렬, Counting Sort |
