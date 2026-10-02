@@ -3,7 +3,6 @@ class Solution:
         answer = []
         def DFS(stack, cnt, level):
             nonlocal answer
-
             if level == 2*n:
                 if cnt == 0:
                     answer.append("".join(stack))
