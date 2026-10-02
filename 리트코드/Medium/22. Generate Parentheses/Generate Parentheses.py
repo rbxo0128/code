@@ -10,10 +10,14 @@ class Solution:
                     return
 
             if cnt > 0:
-                DFS(stack+[")"],cnt-1,level+1)
+                stack.append(")")
+                DFS(stack,cnt-1,level+1)
+                stack.pop()
 
             if 2*n - level > cnt:
-                DFS(stack+["("],cnt+1, level+1)
+                stack.append("(")
+                DFS(stack,cnt+1, level+1)
+                stack.pop()
         
         DFS([],0,0)
         
