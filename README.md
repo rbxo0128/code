@@ -7,6 +7,7 @@
 | 번호 | 문제 | 난이도 | 분류 |
 | ---: | --- | --- | --- |
 | 11 | [Container With Most Water](https://github.com/rbxo0128/code/tree/main/%EB%A6%AC%ED%8A%B8%EC%BD%94%EB%93%9C/Medium/11.%20Container%20With%20Most%20Water/) | 보통 | 그리디, 배열, 투 포인터 |
+| 22 | [Generate Parentheses](https://github.com/rbxo0128/code/tree/main/%EB%A6%AC%ED%8A%B8%EC%BD%94%EB%93%9C/Medium/22.%20Generate%20Parentheses/) | 보통 | 동적 계획법, 문자열, 백트래킹, Bracket Sequences |
 | 35 | [Search Insert Position](https://github.com/rbxo0128/code/tree/main/%EB%A6%AC%ED%8A%B8%EC%BD%94%EB%93%9C/Easy/35.%20Search%20Insert%20Position/) | 쉬움 | 배열, 이분 탐색 |
 | 115 | [Distinct Subsequences](https://github.com/rbxo0128/code/tree/main/%EB%A6%AC%ED%8A%B8%EC%BD%94%EB%93%9C/Hard/115.%20Distinct%20Subsequences/) | 어려움 | 동적 계획법, 문자열 |
 | 176 | [Second Highest Salary](https://github.com/rbxo0128/code/tree/main/%EB%A6%AC%ED%8A%B8%EC%BD%94%EB%93%9C/Medium/176.%20Second%20Highest%20Salary/) | 보통 | 데이터베이스 |
