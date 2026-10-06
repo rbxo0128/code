@@ -19,6 +19,7 @@
 | 836 | [Rectangle Overlap](https://github.com/rbxo0128/code/tree/main/%EB%A6%AC%ED%8A%B8%EC%BD%94%EB%93%9C/Easy/836.%20Rectangle%20Overlap/) | 쉬움 | 기하학, 수학 |
 | 856 | [Score of Parentheses](https://github.com/rbxo0128/code/tree/main/%EB%A6%AC%ED%8A%B8%EC%BD%94%EB%93%9C/Medium/856.%20Score%20of%20Parentheses/) | 보통 | 문자열, 스택, Bracket Sequences |
 | 864 | [Shortest Path to Get All Keys](https://github.com/rbxo0128/code/tree/main/%EB%A6%AC%ED%8A%B8%EC%BD%94%EB%93%9C/Hard/864.%20Shortest%20Path%20to%20Get%20All%20Keys/) | 어려움 | 너비 우선 탐색, 배열, 비트 조작, 행렬 |
+| 921 | [Minimum Add to Make Parentheses Valid](https://github.com/rbxo0128/code/tree/main/%EB%A6%AC%ED%8A%B8%EC%BD%94%EB%93%9C/Medium/921.%20Minimum%20Add%20to%20Make%20Parentheses%20Valid/) | 보통 | 그리디, 문자열, 스택, Bracket Sequences |
 | 1081 | [Smallest Subsequence of Distinct Characters](https://github.com/rbxo0128/code/tree/main/%EB%A6%AC%ED%8A%B8%EC%BD%94%EB%93%9C/Medium/1081.%20Smallest%20Subsequence%20of%20Distinct%20Characters/) | 보통 | 그리디, 단조 스택, 문자열, 스택 |
 | 1091 | [Shortest Path in Binary Matrix](https://github.com/rbxo0128/code/tree/main/%EB%A6%AC%ED%8A%B8%EC%BD%94%EB%93%9C/Medium/1091.%20Shortest%20Path%20in%20Binary%20Matrix/) | 보통 | 너비 우선 탐색, 배열, 행렬 |
 | 1111 | [Maximum Nesting Depth of Two Valid Parentheses Strings](https://github.com/rbxo0128/code/tree/main/%EB%A6%AC%ED%8A%B8%EC%BD%94%EB%93%9C/Medium/1111.%20Maximum%20Nesting%20Depth%20of%20Two%20Valid%20Parentheses%20Strings/) | 보통 | 문자열, 스택, Bracket Sequences |
