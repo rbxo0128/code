@@ -55,6 +55,7 @@
 | 3723 | [Maximize Sum of Squares of Digits](https://github.com/rbxo0128/code/tree/main/%EB%A6%AC%ED%8A%B8%EC%BD%94%EB%93%9C/Medium/3723.%20Maximize%20Sum%20of%20Squares%20of%20Digits/) | 보통 | 그리디, 수학 |
 | 3727 | [Maximum Alternating Sum of Squares](https://github.com/rbxo0128/code/tree/main/%EB%A6%AC%ED%8A%B8%EC%BD%94%EB%93%9C/Medium/3727.%20Maximum%20Alternating%20Sum%20of%20Squares/) | 보통 | 그리디, 배열, 정렬 |
 | 3731 | [Find Missing Elements](https://github.com/rbxo0128/code/tree/main/%EB%A6%AC%ED%8A%B8%EC%BD%94%EB%93%9C/Easy/3731.%20Find%20Missing%20Elements/) | 쉬움 | 배열, 정렬, 해시 테이블 |
+| 3863 | [Minimum Operations to Sort a String](https://github.com/rbxo0128/code/tree/main/%EB%A6%AC%ED%8A%B8%EC%BD%94%EB%93%9C/Medium/3863.%20Minimum%20Operations%20to%20Sort%20a%20String/) | 보통 | 문자열 |
 | 3867 | [Sum of GCD of Formed Pairs](https://github.com/rbxo0128/code/tree/main/%EB%A6%AC%ED%8A%B8%EC%BD%94%EB%93%9C/Medium/3867.%20Sum%20of%20GCD%20of%20Formed%20Pairs/) | 보통 | 배열, 수학, 시뮬레이션, 정렬, 정수론, 투 포인터 |
 | 3870 | [Count Commas in Range](https://github.com/rbxo0128/code/tree/main/%EB%A6%AC%ED%8A%B8%EC%BD%94%EB%93%9C/Easy/3870.%20Count%20Commas%20in%20Range/) | 쉬움 | 수학 |
 | 3876 | [Construct Uniform Parity Array II](https://github.com/rbxo0128/code/tree/main/%EB%A6%AC%ED%8A%B8%EC%BD%94%EB%93%9C/Medium/3876.%20Construct%20Uniform%20Parity%20Array%20II/) | 보통 | 배열, 수학 |
