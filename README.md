@@ -25,6 +25,7 @@
 | 1091 | [Shortest Path in Binary Matrix](https://github.com/rbxo0128/code/tree/main/%EB%A6%AC%ED%8A%B8%EC%BD%94%EB%93%9C/Medium/1091.%20Shortest%20Path%20in%20Binary%20Matrix/) | 보통 | 너비 우선 탐색, 배열, 행렬 |
 | 1111 | [Maximum Nesting Depth of Two Valid Parentheses Strings](https://github.com/rbxo0128/code/tree/main/%EB%A6%AC%ED%8A%B8%EC%BD%94%EB%93%9C/Medium/1111.%20Maximum%20Nesting%20Depth%20of%20Two%20Valid%20Parentheses%20Strings/) | 보통 | 문자열, 스택, Bracket Sequences |
 | 1190 | [Reverse Substrings Between Each Pair of Parentheses](https://github.com/rbxo0128/code/tree/main/%EB%A6%AC%ED%8A%B8%EC%BD%94%EB%93%9C/Medium/1190.%20Reverse%20Substrings%20Between%20Each%20Pair%20of%20Parentheses/) | 보통 | 문자열, 스택, Bracket Sequences |
+| 1254 | [Number of Closed Islands](https://github.com/rbxo0128/code/tree/main/%EB%A6%AC%ED%8A%B8%EC%BD%94%EB%93%9C/Medium/1254.%20Number%20of%20Closed%20Islands/) | 보통 | 깊이 우선 탐색, 너비 우선 탐색, 배열, 행렬, Union-Find |
 | 1260 | [Shift 2D Grid](https://github.com/rbxo0128/code/tree/main/%EB%A6%AC%ED%8A%B8%EC%BD%94%EB%93%9C/Easy/1260.%20Shift%202D%20Grid/) | 쉬움 | 배열, 시뮬레이션, 행렬 |
 | 1291 | [Sequential Digits](https://github.com/rbxo0128/code/tree/main/%EB%A6%AC%ED%8A%B8%EC%BD%94%EB%93%9C/Medium/1291.%20Sequential%20Digits/) | 보통 | 완전 탐색 |
 | 1344 | [Angle Between Hands of a Clock](https://github.com/rbxo0128/code/tree/main/%EB%A6%AC%ED%8A%B8%EC%BD%94%EB%93%9C/Medium/1344.%20Angle%20Between%20Hands%20of%20a%20Clock/) | 보통 | 수학 |
