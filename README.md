@@ -63,5 +63,6 @@
 | 3867 | [Sum of GCD of Formed Pairs](https://github.com/rbxo0128/code/tree/main/%EB%A6%AC%ED%8A%B8%EC%BD%94%EB%93%9C/Medium/3867.%20Sum%20of%20GCD%20of%20Formed%20Pairs/) | 보통 | 배열, 수학, 시뮬레이션, 정렬, 정수론, 투 포인터 |
 | 3870 | [Count Commas in Range](https://github.com/rbxo0128/code/tree/main/%EB%A6%AC%ED%8A%B8%EC%BD%94%EB%93%9C/Easy/3870.%20Count%20Commas%20in%20Range/) | 쉬움 | 수학 |
 | 3876 | [Construct Uniform Parity Array II](https://github.com/rbxo0128/code/tree/main/%EB%A6%AC%ED%8A%B8%EC%BD%94%EB%93%9C/Medium/3876.%20Construct%20Uniform%20Parity%20Array%20II/) | 보통 | 배열, 수학 |
+| 3882 | [Minimum XOR Path in a Grid](https://github.com/rbxo0128/code/tree/main/%EB%A6%AC%ED%8A%B8%EC%BD%94%EB%93%9C/Medium/3882.%20Minimum%20XOR%20Path%20in%20a%20Grid/) | 보통 | 동적 계획법, 배열, 비트 조작, 행렬 |
 | 3963 | [Create Grid With Exactly One Path](https://github.com/rbxo0128/code/tree/main/%EB%A6%AC%ED%8A%B8%EC%BD%94%EB%93%9C/Easy/3963.%20Create%20Grid%20With%20Exactly%20One%20Path/) | 쉬움 | - |
 <!---LeetCode Topics End-->
