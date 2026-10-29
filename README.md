@@ -12,6 +12,7 @@
 | 35 | [Search Insert Position](https://github.com/rbxo0128/code/tree/main/%EB%A6%AC%ED%8A%B8%EC%BD%94%EB%93%9C/Easy/35.%20Search%20Insert%20Position/) | 쉬움 | 배열, 이분 탐색 |
 | 115 | [Distinct Subsequences](https://github.com/rbxo0128/code/tree/main/%EB%A6%AC%ED%8A%B8%EC%BD%94%EB%93%9C/Hard/115.%20Distinct%20Subsequences/) | 어려움 | 동적 계획법, 문자열 |
 | 176 | [Second Highest Salary](https://github.com/rbxo0128/code/tree/main/%EB%A6%AC%ED%8A%B8%EC%BD%94%EB%93%9C/Medium/176.%20Second%20Highest%20Salary/) | 보통 | 데이터베이스 |
+| 198 | [House Robber](https://github.com/rbxo0128/code/tree/main/%EB%A6%AC%ED%8A%B8%EC%BD%94%EB%93%9C/Medium/198.%20House%20Robber/) | 보통 | 동적 계획법, 배열 |
 | 529 | [Minesweeper](https://github.com/rbxo0128/code/tree/main/%EB%A6%AC%ED%8A%B8%EC%BD%94%EB%93%9C/Medium/529.%20Minesweeper/) | 보통 | 깊이 우선 탐색, 너비 우선 탐색, 배열, 행렬 |
 | 678 | [Valid Parenthesis String](https://github.com/rbxo0128/code/tree/main/%EB%A6%AC%ED%8A%B8%EC%BD%94%EB%93%9C/Medium/678.%20Valid%20Parenthesis%20String/) | 보통 | 그리디, 동적 계획법, 문자열, 스택, Bracket Sequences |
 | 695 | [Max Area of Island](https://github.com/rbxo0128/code/tree/main/%EB%A6%AC%ED%8A%B8%EC%BD%94%EB%93%9C/Medium/695.%20Max%20Area%20of%20Island/) | 보통 | 깊이 우선 탐색, 너비 우선 탐색, 배열, 행렬, Union-Find |
