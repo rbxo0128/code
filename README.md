@@ -33,6 +33,7 @@
 | 1260 | [Shift 2D Grid](https://github.com/rbxo0128/code/tree/main/%EB%A6%AC%ED%8A%B8%EC%BD%94%EB%93%9C/Easy/1260.%20Shift%202D%20Grid/) | 쉬움 | 배열, 시뮬레이션, 행렬 |
 | 1291 | [Sequential Digits](https://github.com/rbxo0128/code/tree/main/%EB%A6%AC%ED%8A%B8%EC%BD%94%EB%93%9C/Medium/1291.%20Sequential%20Digits/) | 보통 | 완전 탐색 |
 | 1344 | [Angle Between Hands of a Clock](https://github.com/rbxo0128/code/tree/main/%EB%A6%AC%ED%8A%B8%EC%BD%94%EB%93%9C/Medium/1344.%20Angle%20Between%20Hands%20of%20a%20Clock/) | 보통 | 수학 |
+| 1385 | [Find the Distance Value Between Two Arrays](https://github.com/rbxo0128/code/tree/main/%EB%A6%AC%ED%8A%B8%EC%BD%94%EB%93%9C/Easy/1385.%20Find%20the%20Distance%20Value%20Between%20Two%20Arrays/) | 쉬움 | 배열, 이분 탐색, 정렬, 투 포인터 |
 | 1401 | [Circle and Rectangle Overlapping](https://github.com/rbxo0128/code/tree/main/%EB%A6%AC%ED%8A%B8%EC%BD%94%EB%93%9C/Medium/1401.%20Circle%20and%20Rectangle%20Overlapping/) | 보통 | 기하학, 수학 |
 | 1477 | [Find Two Non-overlapping Sub-arrays Each With Target Sum](https://github.com/rbxo0128/code/tree/main/%EB%A6%AC%ED%8A%B8%EC%BD%94%EB%93%9C/Medium/1477.%20Find%20Two%20Non-overlapping%20Sub-arrays%20Each%20With%20Target%20Sum/) | 보통 | 동적 계획법, 배열, 슬라이딩 윈도우, 이분 탐색, 해시 테이블 |
 | 1614 | [Maximum Nesting Depth of the Parentheses](https://github.com/rbxo0128/code/tree/main/%EB%A6%AC%ED%8A%B8%EC%BD%94%EB%93%9C/Easy/1614.%20Maximum%20Nesting%20Depth%20of%20the%20Parentheses/) | 쉬움 | 문자열, 스택, Bracket Sequences |
