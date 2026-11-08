@@ -31,6 +31,7 @@
 | 1190 | [Reverse Substrings Between Each Pair of Parentheses](https://github.com/rbxo0128/code/tree/main/%EB%A6%AC%ED%8A%B8%EC%BD%94%EB%93%9C/Medium/1190.%20Reverse%20Substrings%20Between%20Each%20Pair%20of%20Parentheses/) | 보통 | 문자열, 스택, Bracket Sequences |
 | 1254 | [Number of Closed Islands](https://github.com/rbxo0128/code/tree/main/%EB%A6%AC%ED%8A%B8%EC%BD%94%EB%93%9C/Medium/1254.%20Number%20of%20Closed%20Islands/) | 보통 | 깊이 우선 탐색, 너비 우선 탐색, 배열, 행렬, Union-Find |
 | 1260 | [Shift 2D Grid](https://github.com/rbxo0128/code/tree/main/%EB%A6%AC%ED%8A%B8%EC%BD%94%EB%93%9C/Easy/1260.%20Shift%202D%20Grid/) | 쉬움 | 배열, 시뮬레이션, 행렬 |
+| 1267 | [Count Servers that Communicate](https://github.com/rbxo0128/code/tree/main/%EB%A6%AC%ED%8A%B8%EC%BD%94%EB%93%9C/Medium/1267.%20Count%20Servers%20that%20Communicate/) | 보통 | 깊이 우선 탐색, 너비 우선 탐색, 배열, 카운팅, 행렬, Union-Find |
 | 1291 | [Sequential Digits](https://github.com/rbxo0128/code/tree/main/%EB%A6%AC%ED%8A%B8%EC%BD%94%EB%93%9C/Medium/1291.%20Sequential%20Digits/) | 보통 | 완전 탐색 |
 | 1344 | [Angle Between Hands of a Clock](https://github.com/rbxo0128/code/tree/main/%EB%A6%AC%ED%8A%B8%EC%BD%94%EB%93%9C/Medium/1344.%20Angle%20Between%20Hands%20of%20a%20Clock/) | 보통 | 수학 |
 | 1385 | [Find the Distance Value Between Two Arrays](https://github.com/rbxo0128/code/tree/main/%EB%A6%AC%ED%8A%B8%EC%BD%94%EB%93%9C/Easy/1385.%20Find%20the%20Distance%20Value%20Between%20Two%20Arrays/) | 쉬움 | 배열, 이분 탐색, 정렬, 투 포인터 |
