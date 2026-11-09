@@ -10,6 +10,7 @@
 | 22 | [Generate Parentheses](https://github.com/rbxo0128/code/tree/main/%EB%A6%AC%ED%8A%B8%EC%BD%94%EB%93%9C/Medium/22.%20Generate%20Parentheses/) | 보통 | 동적 계획법, 문자열, 백트래킹, Bracket Sequences |
 | 32 | [Longest Valid Parentheses](https://github.com/rbxo0128/code/tree/main/%EB%A6%AC%ED%8A%B8%EC%BD%94%EB%93%9C/Hard/32.%20Longest%20Valid%20Parentheses/) | 어려움 | 동적 계획법, 문자열, 스택, Bracket Sequences |
 | 35 | [Search Insert Position](https://github.com/rbxo0128/code/tree/main/%EB%A6%AC%ED%8A%B8%EC%BD%94%EB%93%9C/Easy/35.%20Search%20Insert%20Position/) | 쉬움 | 배열, 이분 탐색 |
+| 62 | [Unique Paths](https://github.com/rbxo0128/code/tree/main/%EB%A6%AC%ED%8A%B8%EC%BD%94%EB%93%9C/Medium/62.%20Unique%20Paths/) | 보통 | 동적 계획법, 수학, 조합론 |
 | 115 | [Distinct Subsequences](https://github.com/rbxo0128/code/tree/main/%EB%A6%AC%ED%8A%B8%EC%BD%94%EB%93%9C/Hard/115.%20Distinct%20Subsequences/) | 어려움 | 동적 계획법, 문자열 |
 | 176 | [Second Highest Salary](https://github.com/rbxo0128/code/tree/main/%EB%A6%AC%ED%8A%B8%EC%BD%94%EB%93%9C/Medium/176.%20Second%20Highest%20Salary/) | 보통 | 데이터베이스 |
 | 198 | [House Robber](https://github.com/rbxo0128/code/tree/main/%EB%A6%AC%ED%8A%B8%EC%BD%94%EB%93%9C/Medium/198.%20House%20Robber/) | 보통 | 동적 계획법, 배열 |
