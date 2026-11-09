@@ -23,7 +23,3 @@ class Solution:
                     arr[i][j] += arr[i][j-1]
 
         return arr[-1][-1]
-
-
-
-        return arr[-1][-1]
